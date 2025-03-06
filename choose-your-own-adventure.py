@@ -1,9 +1,5 @@
 # Start the Story
 
-#comment
-
-#we are dope
-
 
 def start_adventure():
     print("Welcome to your adventure!")
