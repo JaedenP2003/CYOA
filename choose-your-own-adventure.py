@@ -9,7 +9,7 @@ import random
 
 
 def start_adventure():
-    name = input("Enter your name: ")
+    #name = input("Enter your name: ")
     location = input("Enter your location: ")
     print(f"Welcome to BYU-I {name}! Rexburg is a bit different from {location}.")
     print("It's your first semester at BYU-I, and you're excited to meet your roomates at Centre Square! After you get all settled in, you decide to see what Rexburg has to offer.")
