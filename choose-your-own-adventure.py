@@ -2,7 +2,7 @@ import time
 import random
 
 # Start the Story
-# hi test1
+# hi test1 test2
 #comment
 
 #we are dope
@@ -55,3 +55,5 @@ def camp_path():
 
 # Start the adventure
 start_adventure()
+
+# test 1 2 3
