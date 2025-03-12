@@ -9,6 +9,8 @@ import random
 
 
 def start_adventure():
+    name = input("Enter your name: ")
+    location = input("Enter your location: ")
     print(f"Welcome to BYU-I {name}! Rexburg is a bit different from {location}.")
     print("It's your first semester at BYU-I, and you're excited to meet your roomates at Centre Square! After you get all settled in, you decide to see what Rexburg has to offer.")
     print("You discover an activity for freshmen called 'First Friday', and it looks pretty fun. Maybe you'll go if you have the time. When you get back to your apartment, your roomates invite you to go with them to First Friday. Do you ACCEPT the invite or DECLINE?")
