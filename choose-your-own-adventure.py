@@ -51,7 +51,7 @@ def start_adventure():
     print("It’s that point in the semester where you find yourself in a little bit of a slump. The motivation just isn’t as prevalent as it was. Regardless you know you have to stay on top on things. You’re reading a book for one of your classes and highly engaged in homework when a friend texts you about a new show that debuts tonight and asks for you to come over and watch it. Do you go over and WATCH the new show, or STAY at home and continue your studies?")
     choice = input("WATCH or STAY?").lower()
     if choice == "watch":
-        print("")
+        print("") 
     elif choice == "stay":
         print("")
 
@@ -108,3 +108,5 @@ def camp_path():
 
 # Start the adventure
 start_adventure()
+
+#test 123

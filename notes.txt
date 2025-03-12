@@ -47,3 +47,7 @@ def camp_path():
 start_adventure()
 
 https://prod.liveshare.vsengsaas.visualstudio.com/join?F7B37B60D10BAB3183DA0998A5DCA75693FD
+
+
+
+test123
