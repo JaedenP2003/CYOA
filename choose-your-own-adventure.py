@@ -1,7 +1,12 @@
+import time
+import random
+
 # Start the Story
 
-name = input("What is your name?")
-location = input("Where are you from?")
+#comment
+
+#we are dope
+
 
 def start_adventure():
     print(f"Welcome to BYU-I {name}! Rexburg is a bit different from {location}.")
