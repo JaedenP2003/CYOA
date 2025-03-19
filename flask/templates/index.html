@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYU-I Adventure</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>BYU-I Adventure</h2>
+        <p>{{ story.text }}</p>
+
+        {% if story.choices %}
+            <ul>
+                {% for key, value in story.choices.items() %}
+                    <li><a href="{{ url_for('choice', path=key) }}">{{ value }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p><a href="/">Play Again</a></p>
+        {% endif %}
+    </div>
+</body>
+</html>
