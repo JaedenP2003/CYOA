@@ -4,8 +4,8 @@ import random
 # Start the Story
 
 def start_adventure():
-    name = input("Enter your name: ")
-    location = input("Enter your location: ")
+    name = input("Enter your name: ") 
+    location = input("Enter your location: ") 
     
     # Introduction
     
@@ -287,3 +287,5 @@ def start_adventure():
         print("")
     elif choice == "":
         print("")
+        
+start_adventure()
