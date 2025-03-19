@@ -46,7 +46,7 @@ def camp_path():
 # Start the adventure
 start_adventure()
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?BF899E19BCEF70F48020B557315A8D52C057
+https://prod.liveshare.vsengsaas.visualstudio.com/join?BC989270DAFC2ABE8A6DF67BAC2E5D8453D5
 
 
 
