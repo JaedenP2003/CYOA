@@ -51,3 +51,56 @@ https://prod.liveshare.vsengsaas.visualstudio.com/join?B94B7EDF6C2996DCC39DB13E4
 
 
 test123
+
+
+def start():
+    print("Welcome to your adventure!")
+    print("You're standing at a crossroads. Do you go left or right?")
+    choice = input("Type 'left' or 'right': ").strip().lower()
+
+    if choice == "left":
+        forest_path()
+    elif choice == "right":
+        cave_entrance()
+    else:
+        print("Invalid choice. Try again.")
+        start()
+
+def forest_path():
+    print("\nYou walk into a dense forest and hear a noise. Do you investigate or keep walking?")
+    choice = input("Type 'investigate' or 'walk': ").strip().lower()
+
+    if choice == "investigate":
+        print("\nA wild animal appears! You run but get lost. You wander until you find a friendly traveler who helps you. (Ending 1)")
+    elif choice == "walk":
+        print("\nYou continue on the path and find a hidden treasure chest. You are now rich! (Ending 2)")
+    else:
+        print("Invalid choice. Try again.")
+        forest_path()
+
+def cave_entrance():
+    print("\nYou find a dark cave. Do you enter or walk past it?")
+    choice = input("Type 'enter' or 'past': ").strip().lower()
+
+    if choice == "enter":
+        deep_cave()
+    elif choice == "past":
+        print("\nYou ignore the cave and find a peaceful village where you settle down. (Ending 3)")
+    else:
+        print("Invalid choice. Try again.")
+        cave_entrance()
+
+def deep_cave():
+    print("\nInside, you find a glowing crystal. Do you touch it or leave?")
+    choice = input("Type 'touch' or 'leave': ").strip().lower()
+
+    if choice == "touch":
+        print("\nYou gain mysterious powers but are trapped in the cave forever. (Ending 4)")
+    elif choice == "leave":
+        print("\nYou leave safely and tell others about your discovery, becoming famous. (Ending 5)")
+    else:
+        print("Invalid choice. Try again.")
+        deep_cave()
+
+# Start the game
+start()
