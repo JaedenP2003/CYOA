@@ -1,64 +1,106 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Story dictionary
+# Dictionary containing the game's story paths
 story = {
     "start": {
-        "text": "Welcome to BYU-I! It's your first semester, and you're excited to meet your roommates at Centre Square. They invite you to go to 'First Friday,' a fun event for freshmen. Do you ACCEPT the invite or DECLINE?",
+        "text": "Welcome to BYU-I! It's your first semester, and your roommates invite you to 'First Friday.' Do you ACCEPT or DECLINE?",
         "choices": {
-            "accept": "Go with your roommates to First Friday",
+            "accept": "Go to First Friday",
             "decline": "Stay home and settle in"
         }
     },
     "accept": {
-        "text": "You go with your roommates and build relationships with them. Now, it's Monday, and classes begin. Your last class is more work than expected but could be beneficial. Do you STICK with it or DROP the class?",
+        "text": "You meet great people at First Friday! Monday arrives, and a class is harder than expected. Do you STICK with it or DROP it?",
         "choices": {
-            "stick": "Stick with the challenging class",
-            "drop": "Drop the class and focus on others"
+            "stick": "Stick with the class",
+            "drop": "Drop the class"
         }
     },
     "decline": {
-        "text": "You stay home but feel a little regretful for missing out. Monday arrives, and your last class is tougher than expected. Do you STICK with it or DROP the class?",
+        "text": "You stay home but feel left out. Monday arrives, and a class is harder than expected. Do you STICK with it or DROP it?",
         "choices": {
-            "stick": "Stick with the challenging class",
-            "drop": "Drop the class and focus on others"
+            "stick": "Stick with the class",
+            "drop": "Drop the class"
         }
     },
     "stick": {
-        "text": "You decide to challenge yourself and stick with the class. Week 2 arrives, and you need groceries. Do you STAY in town and shop or DRIVE to Idaho Falls for bulk shopping?",
+        "text": "Your commitment pays off! You need groceries. Do you SHOP locally or DRIVE to Costco?",
         "choices": {
-            "stay": "Shop in town at Walmart",
-            "drive": "Drive to Idaho Falls for Costco shopping"
+            "shop": "Shop in town",
+            "drive": "Drive to Idaho Falls"
         }
     },
     "drop": {
-        "text": "You drop the class, feeling relieved but wondering if it was the right decision. Now, you need groceries. Do you STAY in town or DRIVE to Idaho Falls?",
+        "text": "You free up time, but question your decision. You need groceries. Do you SHOP locally or DRIVE to Costco?",
         "choices": {
-            "stay": "Shop in town at Walmart",
-            "drive": "Drive to Idaho Falls for Costco shopping"
+            "shop": "Shop in town",
+            "drive": "Drive to Idaho Falls"
         }
     },
-    "stay": {
-        "text": "You get your groceries easily, though they cost a bit more. Week 3 arrives, and you want to explore. Do you visit the SAND DUNES or hike R MOUNTAIN?",
+    "shop": {
+        "text": "You find what you need, but prices are high. Do you VISIT the DUNES or HIKE the MOUNTAIN?",
         "choices": {
-            "dunes": "Visit the sand dunes",
+            "dunes": "Go to the dunes",
             "mountain": "Hike R Mountain"
         }
     },
     "drive": {
-        "text": "You save money by shopping at Costco but spend time driving. Week 3 arrives, and you want to explore. Do you visit the SAND DUNES or hike R MOUNTAIN?",
+        "text": "You save money but spend time driving. Do you VISIT the DUNES or HIKE the MOUNTAIN?",
         "choices": {
-            "dunes": "Visit the sand dunes",
+            "dunes": "Go to the dunes",
             "mountain": "Hike R Mountain"
         }
     },
     "dunes": {
-        "text": "You enjoy the dunes, making great memories with friends. The end!",
-        "choices": {}
+        "text": "You enjoy the dunes! Later, you're invited to a study group. Do you JOIN or SKIP?",
+        "choices": {
+            "join": "Join the study group",
+            "skip": "Skip and relax"
+        }
     },
     "mountain": {
-        "text": "You conquer R Mountain, feeling accomplished. The end!",
+        "text": "You conquer the mountain! Later, you're invited to a study group. Do you JOIN or SKIP?",
+        "choices": {
+            "join": "Join the study group",
+            "skip": "Skip and relax"
+        }
+    },
+    "join": {
+        "text": "Your grades improve, and you meet new friends. One night, you can STUDY for a test or go to a PARTY. What do you do?",
+        "choices": {
+            "study": "Study hard",
+            "party": "Party and have fun"
+        }
+    },
+    "skip": {
+        "text": "You relax but struggle in class. One night, you can STUDY for a test or go to a PARTY. What do you do?",
+        "choices": {
+            "study": "Study hard",
+            "party": "Party and have fun"
+        }
+    },
+    "study": {
+        "text": "You ace the test! Later, a career fair comes up. Do you ATTEND or SKIP?",
+        "choices": {
+            "attend": "Attend the career fair",
+            "skip_fair": "Skip the fair"
+        }
+    },
+    "party": {
+        "text": "You have fun, but your grades slip. Later, a career fair comes up. Do you ATTEND or SKIP?",
+        "choices": {
+            "attend": "Attend the career fair",
+            "skip_fair": "Skip the fair"
+        }
+    },
+    "attend": {
+        "text": "You network well and land an internship! Congratulations, you reached ENDING #1!",
+        "choices": {}
+    },
+    "skip_fair": {
+        "text": "You miss a great opportunity, but enjoy college life. You reached ENDING #2.",
         "choices": {}
     }
 }

@@ -1,0 +1,11 @@
+# Week 8
+        print(f"""You feel relieved to be done with your midterm exams and projects. A nearby relative invites you to a family dinner on Sunday,
+         they seem excited that you're in Idaho! Do you GO or STAY at home?""")
+    choice = input("GO or STAY").strip().lower()
+    if choice == "go":
+        print(f"""You go to the family dinner, a little shy at first since you haven't seen these relatives in a while, but your cousin is super social
+              and gets you to open up quickly. Your Aunt made a delicious pot roast. The smell gets you salivating a bit. You all sit around the table and
+              your uncle offers a blessing for the food. You spend about 3 hours with them before heading home for the night. You have a smile on your face
+              the entire way home""")
+    elif choice == "":
+        print("") 

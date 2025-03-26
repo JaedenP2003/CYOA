@@ -29,11 +29,11 @@ def start_adventure():
     print("""Before you know it, the First Friday party for freshmen rolls around. Your roommates are one of many students excited and invite 
             you to go out with them! Do you ACCEPT the invite or DECLINE?""")
     choice = input("ACCEPT or DECLINE?").lower()
-    if choice == "accept":
+    if choice == "accept": ## Leads toward MC 2
         print("""You go with your roommates to first Friday and build some relationships with them. You feel closer to them than just a few days
                earlier when you moved in. They could turn out to be a great support system!""")
         friend = True ## Establishes a persistent friend status that can be referenced in later code ex. "if friend: \\ print("***")" \\ else: \\ print("***")
-    elif choice == "decline":
+    elif choice == "decline": ## Leads toward MC 3
         print("""You politely decline as you just want to get settled in more. As the night goes on you feel a little regret and wonder how much
                you’re missing out. It doesn’t help that your roommates came back raving about how fun it was.""")
         friend = False ## maintains the friend status as false
@@ -85,14 +85,14 @@ def start_adventure():
 
     # Week 6
     
-        print(f"""Another week has come and gone, and it's almost the weekend. You've been busy with school and homework,
-              but you've reached a point where you want to do something exciting like going hottubbing or going to a campus
-              activity. However, you do have a few more homework assignments to finish. Do you go to the CAMPUS activity or finish
-              your ASSIGNMENTS?""")
-    choice = input("CAMPUS or ASSIGNMENTS?").lower()
-    if choice == "campus":
+    print(f"""The weather is very bleak this week, the snow is rolling in! It’s going to be very cold, 
+              snowy and windy, but you have a peer awaiting your help in a class. She’s really struggling 
+              with the concepts of the class, but you notice some ice outside your apartment window and 
+              think it might be a little risky. Do you HEAD to class, or try to AVOID the ice and stay home?""")
+    choice = input("HEAD or AVOID?").lower()
+    if choice == "head":
         print("")
-    elif choice == "assignments":
+    elif choice == "avoid":
         print("")
         
     # Week 7 Major Choice 2,3 ----------------------------------------------------------
@@ -103,11 +103,11 @@ def start_adventure():
         Friday night this week. However, since you got close to your friends at first friday, they invite
         you to a watch party for a new show that debuts for the same night. Do you meetup for your PROJECT or go to the WATCH party?""")
         w7choice = input("PROJECT or WATCH? ").strip().lower()
-    if w7choice == "project":
+    if w7choice == "project": ## Leads to MC 4
         print(f"""You decide to go work on your project with your team. Your roommate is a little bummed out and was persistent
         but eventually accepted your decision to be diligent and responsible. You and your team meet on Fridday and get a lot 
         of work done. You feel really good about your decision and are confident you and your team will get a good grade""")
-    elif w7choice == "watch":
+    elif w7choice == "watch": ## Leads to MC 5
         print(f"""You've been looking for an excuse to get out of meeting with your team anyways. You tell your group that you
         wont be able to make it. You feel a slight internal guilt, but your excitment overpowers the guilt.""") 
     
@@ -118,9 +118,9 @@ def start_adventure():
               One of your roommates asks if you want to go to the library to study, but you're really comfortable watching your TV show 
               right now. Do you WATCH your show or STUDY with your roommate at the library?""")
         w7_2choice = input("WATCH or STUDY").strip().lower()
-        if w7_2choice == "watch":
+        if w7_2choice == "watch": ## Leads to MC 5
             print(f"""You thank your roommate but tell him that you're taking a mental break and that you're just going to chill for now.""")
-        elif w7_2choice == "study":
+        elif w7_2choice == "study": ## Leads to MC 4
             print (f"""[placeholder]""")
     # Week 8
     
@@ -184,9 +184,9 @@ def start_adventure():
               you were proud to say it was better than you expected! Going into the new year and semester, 
               you want to set some goals to stay on track. Are your goals to STUDY harder or expand your SOCIAL circle?""")
     choice = input("STUDY or SOCIAL?").lower()
-    if choice == "":
+    if choice == "": ## Leads to MC 6
         print("study")
-    elif choice == "":
+    elif choice == "": ## Leads to MC 7
         print("social")
 
     # Week 14-16 Major Choice 5 -------------------------------------------------
@@ -198,22 +198,25 @@ def start_adventure():
               As the new year rolls around, you’ve been weighing out your options. You don’t know how well another semester would treat you. 
               You could DROP out, take a BREAK, go BACK from embarrassment, or PROVE everyone wrong next semester.""")
     choice = input("DROP, BREAK, PROVE, or BACK?").lower()
-    if choice == "drop": #dropping out
+    if choice == "drop": ##dropping out (MC 18)
         print("")
-    elif choice == "break": #leads to death
+    elif choice == "break": ##leads to death (MC19)
         print("")
-    elif choice == "prove":
+    elif choice == "prove": ##Leads to MC 8
         print("") 
-    elif choice == "back":
+    elif choice == "back": ##Leads to MC 9
         print("") 
     
     # Week 17  
     
-        print("")
-    choice = input("").lower()
-    if choice == "":
-        print("")
-    elif choice == "":
+        print("""You had a restful and calm break! Now you're back in school and ready for the winter semester.
+             You find out your new roommates are chill like that, kawabunga baby.
+             they wanna hangout and go sledding but you need to get groceries. Do you choose to go HANGOUT with them or 
+             do you go out and get GROCERIES?""")
+    choice = input("HANGOUT or GROCERIES?").lower()
+    if choice == "hangout":
+        print("You decided to hangout with your new roommates! You all go out to the dunes and shred the sand with a sled. you guys de")
+    elif choice == "groceries":
         print("") 
            
     # Week 18
@@ -254,7 +257,7 @@ def start_adventure():
            
     # Week 22
     
-        print("")
+        print()
     choice = input("").lower()
     if choice == "":
         print("")
@@ -269,9 +272,9 @@ def start_adventure():
               You’ve been out with this person a handful of times and you’re starting to really like them. Do you go out on the DATE, 
               or reschedule it so you can get help with your HOMEWORK?""")
     choice = input("HOMEWORK or DATE?").lower()
-    if choice == "homework":
+    if choice == "homework": ##Leads to MC 10
         print("")
-    elif choice == "date":
+    elif choice == "date": ##Leads to MC 11
         print("") 
 
     # choice 7 dialogue  -------------------------
@@ -279,11 +282,11 @@ def start_adventure():
         Valentine's day is almost here and you’re weighing out your options. You could ask them to be your VALENTINE, 
         go further and ask them to be OFFICIAL, or CUT things off with them.""")
     choice = input("VALENTINE, OFFICIAL, or CUT?").lower()
-    if choice == "valentine":
+    if choice == "valentine": ##Leads to MC 10
         print("")
-    elif choice == "official":
+    elif choice == "official": ##Leads to MC 11
         print("") 
-    elif choice == "cut":
+    elif choice == "cut": ##Leads to MC 12
         print("") 
 
     # choice 8 dialogue -------------------------
@@ -292,11 +295,11 @@ def start_adventure():
         You’ve been out with this person a handful of times and you’re starting to really like them, but you’re also stressed out with your homework. 
         Do you go on the DATE, reschedule it so you can get help with your HOMEWORK or take some time to RELAX and watch that new show you started?""")
     choice = input("DATE, HOMEWORK, or RELAX?").lower()
-    if choice == "date":
+    if choice == "date": ##Leads to MC 12
         print("")
-    elif choice == "homework":
+    elif choice == "homework": ##Leads to MC 11
         print("") 
-    elif choice == "relax":
+    elif choice == "relax": ##Leads to MC 13
         print("") 
 
     # choice 9 dialogue ------------------------
@@ -304,21 +307,26 @@ def start_adventure():
         The weekend is coming up and you want to have some fun. You’re weighing out your options.
          You could ask someone out on a DATE, watch some TV to decompress or attempt to baptize your CAR.""")
     choice = input("DATE, TV or CAR?").lower()
-    if choice == "date":
+    if choice == "date": ##Leads to MC 12
         print("")
-    elif choice == "tv":
+    elif choice == "tv": ##Leads to MC 13
         print("") 
-    elif choice == "car":
+    elif choice == "car": ##Leads to MC 14
         print("") 
 
     # Week 24
     
-        print("")
-    choice = input("").lower()
-    if choice == "":
-        print("")
-    elif choice == "":
-        print("") 
+        print("""Your bank account is looking pretty sad these days, but your roomates are going to Buffalo Wild Wings. Those wings
+        are calling your name. Its Saturday so there's no deals going on. Do you hope for a money miracle, and go to to B Dubs with the gang 
+        or do you SUGGEST going on Tuesday instead for the BOGO wings?""")
+    choice = input("GO or SUGGEST").lower()
+    if choice == "go":
+        print("""You go to Buffalo and get your favorite meal. You feast and then your roommate suggests getting ice cream. They just happened to
+        choose the most expensive place around. You can't not get ice cream. The B Dubs was already a hit to the finaces, but flavor of the month just happens
+        to be your favorite AND 10 percent off. You'll just have to save extra hard next week.""")
+    elif choice == "SUGGEST":
+        print("""You suggest going on Tuesday, but your roommates say the game they want is on tonight. They call you a bum and go without you, but its okay you 
+              needed to save money anyways.""") 
            
     # Week 25
     
@@ -340,12 +348,20 @@ def start_adventure():
            
     # Week 27
     
-        print("")
-    choice = input("").lower()
-    if choice == "":
-        print("")
-    elif choice == "":
-        print("") 
+        print(""""You stayed up way too late last night watching Netflix. You wake up and check your phone, its 5 minutes past
+            the start of your first class. If it were any other class you would easily just go baxk to bed, but this professor counts 
+            attendance for a grade. You could RUSH and get ready for class and be 20 minutes late, or you could SLEEP in and make 
+            up some lame excuse later.""")
+    choice = input("RUSH or SLEEP").lower()
+    if choice == "rush":
+        print("""You count done from 5 and pop out of bed. You rush and make it out the door in 5 minutes. You haven't been late to 
+              this class all semester so you have no idea how the professor will react. You walk in 24 minutes late and your professor 
+              greets you with a smile and says "Glad you could make it!" Relieved at his response, you sit down and prepare for another day 
+              of classes.""")
+    elif choice == "sleep":
+        print("""You try to fight your fatigue but it takes you out with a gust a wind from the window, reminding you how warm your bed is. 
+              You wake up again and not only have you missed your first class, but you've missed another and the meeting you had with your group.
+              Now you scramble to come up with your best excuse, at least on better than "I gave 5 hours of my life to Netflix last night." """) 
            
     # Week 28
     
@@ -358,7 +374,7 @@ def start_adventure():
            
     # Week 29
     
-        print("")
+        print("It's so close to the end of the semester annd you just finished up studying for th")
     choice = input("").lower()
     if choice == "":
         print("")
@@ -373,9 +389,9 @@ def start_adventure():
               You know you’ve studied hard, you could afford one night off, right? Do you want to play it safe and STUDY or take your person out for 
               something SPECIAL?""")
     choice = input("STUDY or SPECIAL?").lower()
-    if choice == "study":
+    if choice == "study": ## Leads to Ending 15
         print("")
-    elif choice == "special":
+    elif choice == "special": ##Leads to Ending 16
         print("""You decide to take your special someone out for a special night. You go out to Millhollow for dinner, a rather expensive diner, and 
         then walk through the campus gardens just as the sun is setting. Is there really a better time than now? Before you realize it, you’re strolling 
         right into the gazebo with the love of your life right next to your side. You leave the gardens, one of you with a gem dazzling on your ring finger.""")
@@ -385,11 +401,11 @@ def start_adventure():
             is coming up. This week you’ve got lots of exams and almost no time; you are stressed out to the max. You have the choice to STUDY, take your lover 
             out for something SPECIAL, or hit pause and go out for some FUN with your friends. What will it be?""")
     choice = input("STUDY, SPECIAL, or FUN?").lower()
-    if choice == "study":
+    if choice == "study": ##Leads to Ending 15
         print("")
-    elif choice == "special":
+    elif choice == "special": ##Leads to Ending 16
         print("")
-    elif choice == "fun":
+    elif choice == "fun": ##Leads to Ending 17
         print("""You decide to go out for some fun over the weekend! You’ve been studying so what’s the harm? Well, apparently your relationship and your grades.
             You had mentioned extreme stress from finals but then went out for the weekend with some friends. Your partner felt like a last priority and decided
             to break things off for now. It didn’t help that you didn’t feel confident in any of your exams either. Maybe you should’ve studied more…""") 
@@ -398,15 +414,15 @@ def start_adventure():
               the gardens tonight. You know what could be at the end of this road. Do you go to the GARDENS, HIDE in your apartment or RUN back to your hometown 
               in fear of a commitment?""")
     choice = input("GARDENS, HIDE, or RUN?").lower()
-    if choice == "gardens":
+    if choice == "gardens": ##Leads to Ending 16
         print("""You decide to take your special someone up on their invitation. You go out to Millhollow for dinner, a rather expensive diner, and then walk through
             the campus gardens just as the sun is setting. Is there really a better time than now? Before you realize it, you’re strolling right into the gazebo with 
             the love of your life right next to your side. You leave the gardens, one of you with a gem dazzling on your ring finger.""")
-    elif choice == "hide":
+    elif choice == "hide": ##Leads to Ending 17
         print("""You’re paralyzed by your decision. Are you ready? Are they ready? You’ve been out with them for some time now but the fear of how little you know about
             this person eats you alive. You stay up all night, consumed by your thoughts. Before you realize, it’s light outside and you had several final exams lined up 
             for the day. Hopefully it works out.""")
-    elif choice == "run":
+    elif choice == "run": ##Leads to Ending 18
         print("""It all happened so fast and you didn’t feel ready for any of it. You’d heard the saying “byu-i do” but you didn’t expect to experience that firsthand. 
             In fear of such a commitment, you run back to your hometown. You took the time to take a breather, but in turn you missed your final exams! You start to think 
             maybe you weren’t cut out for this whole college thing…""") 
@@ -415,11 +431,11 @@ def start_adventure():
         print("""You’re back at another week of school and things aren’t doing great. Maybe your family was right after all. Is it even worth it to try if you know you’re 
             going to fail? Do you want to attempt your EXAMS, give in to your family by dropping OUT of school, or ignore it all and go for a late night DRIVE?""")
     choice = input("EXAMS, OUT, or DRIVE?").lower()
-    if choice == "exams":
+    if choice == "exams": ##Leads to Ending 17
         print("")
-    elif choice == "out":
+    elif choice == "out": ##Leads to Ending 18
         print("")
-    elif choice == "drive":
+    elif choice == "drive": ##Leads to Ending 19
         print("""You hop in your car late at night, annoyed by the rain that’s beginning to come down. 
               You turn up your radio to full blast as you start to cruise on the freeway.
             You’re shouting at the top of your lungs when all of the sudden a deer hops right in front of you! 
@@ -434,9 +450,9 @@ def start_adventure():
          Just as you’re about to push the pedal further, you see sirens flash in your rearview mirror.
         You mutter under your breath as you weigh out your options. Do you PULL over or try to RUN away?""")
     choice = input("PULL or RUN?").lower()
-    if choice == "pull":
+    if choice == "pull": ##Leads to Ending 18
         print("")
-    elif choice == "run":
+    elif choice == "run": ##Leads to Ending 19
         print("") 
 
 
