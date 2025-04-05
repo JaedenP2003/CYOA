@@ -1,11 +1,130 @@
-# Week 8
-        print(f"""You feel relieved to be done with your midterm exams and projects. A nearby relative invites you to a family dinner on Sunday,
-         they seem excited that you're in Idaho! Do you GO or STAY at home?""")
-    choice = input("GO or STAY").strip().lower()
-    if choice == "go":
-        print(f"""You go to the family dinner, a little shy at first since you haven't seen these relatives in a while, but your cousin is super social
-              and gets you to open up quickly. Your Aunt made a delicious pot roast. The smell gets you salivating a bit. You all sit around the table and
-              your uncle offers a blessing for the food. You spend about 3 hours with them before heading home for the night. You have a smile on your face
-              the entire way home""")
-    elif choice == "":
-        print("") 
+# week 7
+   if friend: 
+        print(f"""As midterms near, group projects are ramping up and your team has decided to hold a meeting 
+        Friday night this week. However, since you got close to your friends at first friday, they invite
+        you to a watch party for a new show that debuts for the same night. Do you meetup for your PROJECT or go to the WATCH party?""")
+        w7choice = input("PROJECT or WATCH? ").strip().lower()
+    if w7choice == "project": ## Leads to MC 4
+        print(f"""You decide to go work on your project with your team. Your roommate is a little bummed out and was persistent
+        but eventually accepted your decision to be diligent and responsible. You and your team meet on Fridday and get a lot 
+        of work done. You feel really good about your decision and are confident you and your team will get a good grade""")
+    elif w7choice == "watch": ## Leads to MC 5
+        print(f"""You've been looking for an excuse to get out of meeting with your team anyways. You tell your group that you
+        wont be able to make it. You feel a slight internal guilt, but your excitment overpowers the guilt.""") 
+    
+    # choice 3 dialogue
+    # this choice will appear if you DID NOT go to first friday 
+    else: 
+        print(f"""Since you're not super close with your roommates, you decide to spend some free time binge-watching a new TV show.
+              One of your roommates asks if you want to go to the library to study, but you're really comfortable watching your TV show 
+              right now. Do you WATCH your show or STUDY with your roommate at the library?""")
+        w7_2choice = input("WATCH or STUDY").strip().lower()
+        if w7_2choice == "watch": ## Leads to MC 5
+            print(f"""You thank your roommate but tell him that you're taking a mental break and that you're just going to chill for now.""")
+        elif w7_2choice == "study": ## Leads to MC 4
+            print (f"""You tell your roommate that you're down to study with him. You walk to the library together. The cold weather seems to have passed for now
+            and the weather is pretty nice out. The cool fall breeze brushes against your hair, you're gratefull that you decided to come to BYU-Idaho""")
+    
+
+ # Week 8
+    print(f"""You feel relieved to be done with your midterm exams and projects. A nearby relative invites you to a family dinner on Sunday,
+    they seem excited that you're in Idaho! Do you GO or STAY at home?""")
+    while True:
+        choice = input("GO or STAY: ").strip().lower()
+        if choice == "go":
+            print(f"""You go to the family dinner, a little shy at first since you haven't seen these relatives in a while, but your cousin is super social
+            and gets you to open up quickly. Your Aunt made a delicious pot roast. The smell gets you salivating a bit. You all sit around the table and
+            your uncle offers a blessing for the food. You spend about 3 hours with them before heading home for the night. You have a smile on your face
+            the entire way home.""")
+            break # Will end loop
+        elif choice == "stay":
+            print("You tell your relatives that you're pretty busy this weekend and decide to stay home.")
+            break # Will end loop
+        else:
+            print("Invalid input. Please choose GO or STAY.") # Will loop back to input choice
+
+          
+    # Week 9
+    
+        print(f"""Another week passes and you feel like you're getting the hang of college. You start thinking about some hobbies you could take up in
+        the area. Some of your friends talked about starting an intramural volleyball team, but you've also wanted to get into rock climbing. Do you decide 
+        do VOLLEYBALL or CLIMB?""")
+    while True:
+        choice = input("VOLLEYBALL or CLIMB").strip().lower()
+        if choice == "volleyball":
+            print(f"""You tell your friends that you'd be interested in joing their volleyball team. They're super excited because they needed another person.
+            You guys start practicing this week and you realize volleyball is a lot more fun than high school P.E. class made it seem.""")
+            break # Will end loop
+        elif choice == "climb":
+            print(f"""After some consideration, you decide to go to the Rock Gym in rexburg and give climbing a shot. You meet some really cool people at the gym
+            and decide you're going to get a membership and start going as often as you can.""")
+            break # Will end loop
+        else:
+            print("Invalid input. Please choose GO or STAY.") # Will loop back to input choice
+        
+    # Week 10
+    
+        print(f"""You have been so busy with school and other activities that you realize you haven't been reading Come Follow Me very often. Your family 
+        has been doing weekly zoom calls to read together, but you've told them you have been too busy to join each week. This week you know you 
+        have a little bit more time. You could JOIN or you could NOT join.""")
+    while True:
+        choice = input("JOIN or NOT").strip().lower()
+        if choice == "join":
+            print(f"""You tell your family that you'll join their Come Follow Me study session this week. They're excited to have you. They ask you about school,
+            about your dating life, and other things going on. As you guys start reading the scriptures together, you feel happy that you joined.""")
+            break # Will end loop
+        elif choice == "NOT":
+            print(f"""You tell your family that you're still really busy this week and won't be able to make it. With your off time, you decide to just take
+            a nap all afternoon. You wake up super tired and a little sad that you didn't join your family.""")      
+            break # Will end loop
+        else:
+            print("Invalid input. Please choose GO or STAY.") # Will loop back to input choice
+
+    # Week 11
+    
+        print(f"""Monday rolls around and as you're eating lunch at the crossroads, a stranger comes up to you and hands you a note. They say 'someone told me to
+        give this to you.' You accept the note and read 'I think you're really cute, you should text me! 208-198-0000. You feel warm inside and can't help but blush.
+        You look around a little bit without being too obvious. You haven't been on a date in college yet, but you're nervous about going on a blind date. Do you TEXT
+        the number or NOT?""")
+    while True:
+        choice = input("TEXT or NOT")strip().lower()
+        if choice == "text":
+            print(f"""You text the number later that night and get a response almost immediately. You get their name, and set a date time for Friday at 6pm. Thursday
+            comes around and you meet up with them. You feel a little awkward. You guys go play mini-golf at Fat Cats. Afterwards you guys go get froyo from Kiwi Loco.
+            It was a pretty good date, but you're not super interested in them. You tell them honestly. They're visibly saddened but accept your decision. You're exited
+            about having finally gone on your first date in college!""")
+            break
+        elif choice == "not":
+            print(f"""You think about it a little more and decide not to text them. You've never met them and it feels weird trying to set up a date like that. A few days 
+            pass and you eventually kinda forget about the note altogether.""") 
+            break
+        else:
+            print("Invalid input. Please choose GO or STAY.") # Will loop back to input choice
+
+
+         # Week 12
+    
+        print(F"""Its week 12 of the semester and you and your roommates decide to go on an adventure. You're driving to Idaho Falls and on the way you spot what looks
+              like an abandoned building. You guys joke about exploring it, but then someone proposes you actually go explore it. You get a little hot inside. You've 
+              never explored an abandoned building. Two of your friends say they want to explore it, two of them say they don't. They all look at you for the tie breaker.
+              Will you EXPLORE the abandoned building or NOT explore it?""")
+    while True:
+        choice = input("EXPLORE or NOT").strip().lower()
+        if choice == "explore":
+            print(f"""You tell them 'why not? Lets go check it out! If anything seems off, we'll leave, deal?' You guys turn around and pull off to get as close to the 
+            building as possible. You feel an eerie feeling as you guys approach the building. KEEP GOING or STOP?""")
+        while True:
+            choice = input("KEEP GOING or STOP").strip().lower()
+            if choice == "keep going":
+                print(f"""You guys walk into the building without expressing your concerns. You walk into a large main room with cement walls Its dark inside with only 
+                      the doorway lighting the building. You see lots of rubble around the area. You see rafters up towards the ceiling. You walk in a litte farther. You
+                      guys come accross a staircase doing down, but you cannot see anything. You keep looking over your shoulder. You start to feel really bad about this
+                      and get the feeling you guys should leave.""")
+                while True:
+                    choice = input("GO DOWN or LEAVE").strip().lower()
+                    if choice == "go down":
+                        print(f"""You ignore your feelings and tell your friends you want to go downstairs. You turn your phone flashlight on and slowly start to make your
+                              way downstairs. One of your friend says they have a bad feeling and want to leave. You tell them its fine, and """)
+
+        elif choice == "":
+            print("")hlight you can't see the end of it. Tou stYou start to hear some scruffling.
