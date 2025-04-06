@@ -1,8 +1,8 @@
 "accept": {
-    "text":
+    "text": "You go with your roommates to first Friday and build some relationships with them. You feel closer to them than just a few days earlier when you moved in. They could turn out to be a great support system! Monday comes around and it’s time to go to your first classes, mostly generals. You go to all of your classes, but the final one in the afternoon seems like it’s going to be a lot more work than you anticipated. It could offer some heavy benefits down the road, but it’s not required for your major. Do you STICK with it, or DROP the class?",
     "choices": {
-        "week2":
-        "week2":
+        "week2-1a": "Stick with it",
+        "week2-1b": "Drop the class",
     }
 },
 "week2": {
@@ -44,90 +44,8 @@
 
 
 
-"week8-1a": {
-    "text": "You feel relieved to be done with your midterm exams and projects. A nearby relative invites you to a family dinner on Sunday, they seem excited that you're in Idaho! Do you GO or STAY at home?",
-    "choices": {
-        "week9-1a": "Go to Sunday dinner",
-        "week9-1b": "Stay at home",
-    }
-},
-"week8-1b": {
-    "text": "You feel relieved to be done with your midterm exams and projects. A nearby relative invites you to a family dinner on Sunday, they seem excited that you're in Idaho! Do you GO or STAY at home?",
-    "choices": {
-        "week9-1a": "Go to Sunday dinner",
-        "week9-1b": "Stay at home",
-    }
-},
-"week9-1a": {
-    "text": "Another week passes and you feel like you're getting the hang of college. You start thinking about some hobbies you could take up in the area. Some of your friends talked about starting an intramural volleyball team, but you've also wanted to get into rock climbing. Do you decide to do VOLLEYBALL or CLIMB?",
-    "choices": {
-        "week10-1a": "Play volleyball",
-        "week10-1b": "Go rock climbing",
-    }
-},
-"week9-1b": {
-    "text": "Another week passes and you feel like you're getting the hang of college. You start thinking about some hobbies you could take up in the area. Some of your friends talked about starting an intramural volleyball team, but you've also wanted to get into rock climbing. Do you decide to do VOLLEYBALL or CLIMB?",
-    "choices": {
-        "week10-1a": "Play volleyball",
-        "week10-1b": "Go rock climbing",
-    }
-},
-"week10-1a": {
-    "text": "You have been so busy with school and other activities that you realize you haven't been reading Come Follow Me very often. Your family has been doing weekly zoom calls to read together, but you've told them you have been too busy to join each week. This week you know you have a little bit more time. You could JOIN or you could NOT join.",
-    "choices": {
-        "week11-1a": "Join the family call",
-        "week11-1b": "Put if off another week",
-    }
-},
-"week10-1b": {
-    "text": "You have been so busy with school and other activities that you realize you haven't been reading Come Follow Me very often. Your family has been doing weekly zoom calls to read together, but you've told them you have been too busy to join each week. This week you know you have a little bit more time. You could JOIN or you could NOT join.",
-    "choices": {
-        "week11-1a": "Join the family call",
-        "week11-1b": "Put if off another week",
-    }
-},
-"week11-1a": {
-    "text": "Monday rolls around and as you're eating lunch at the crossroads, a stranger comes up to you and hands you a note. They say 'someone told me to give this to you.' You accept the note and read 'I think you're really cute, you should text me! 208-198-0000. You feel warm inside and can't help but blush. You look around a little bit without being too obvious. You haven't been on a date in college yet, but you're nervous about going on a blind date. Do you TEXT the number or NOT?",
-    "choices": {
-        "week12-1a": "Text the number",
-        "week12-1b": "Don't text the number",
-    }
-},
-"week11-1b": {
-    "text": "Monday rolls around and as you're eating lunch at the crossroads, a stranger comes up to you and hands you a note. They say 'someone told me to give this to you.' You accept the note and read 'I think you're really cute, you should text me! 208-198-0000. You feel warm inside and can't help but blush. You look around a little bit without being too obvious. You haven't been on a date in college yet, but you're nervous about going on a blind date. Do you TEXT the number or NOT?",
-    "choices": {
-        "week12-1a": "Text the number",
-        "week12-1b": "Don't text the number",
-    }
-},
-"week12-1a": {
-    "text": "Its week 12 of the semester and you and your roommates decide to go on an adventure. You're driving to Idaho Falls and on the way you spot what looks like an abandoned building. You guys joke about exploring it, but then someone proposes you actually go explore it. You get a little hot inside. You've never explored an abandoned building. Two of your friends say they want to explore it, two of them say they don't. They all look at you for the tie breaker. Will you EXPLORE the abandoned building or NOT explore it?",
-    "choices": {
-        "week13-1a": "Explore the abandoned building",
-        "week13-1b": "Don't explore it",
-    }
-},
-"week12-1b": {
-    "text": "Its week 12 of the semester and you and your roommates decide to go on an adventure. You're driving to Idaho Falls and on the way you spot what looks like an abandoned building. You guys joke about exploring it, but then someone proposes you actually go explore it. You get a little hot inside. You've never explored an abandoned building. Two of your friends say they want to explore it, two of them say they don't. They all look at you for the tie breaker. Will you EXPLORE the abandoned building or NOT explore it?",
-    "choices": {
-        "week13-1a": "Explore the abandoned building",
-        "week13-1b": "Don't explore it",
-    }
-},
-"week13-1a": {
-    "text": "The end of the semester is quickly approaching, and you have a little bit of time before finals. Your roommates want to go country dancing and invite you to tag along. You could go with them, or you could STAY and play the new video game you just bought. Do you GO country dancing or STAY and play the game?",
-    "choices": {
-        "week14": "Go country dancing",
-        "week14": "Play the new video game",
-    }
-},
-"week13-1b": {
-    "text": "The end of the semester is quickly approaching, and you have a little bit of time before finals. Your roommates want to go country dancing and invite you to tag along. You could go with them, or you could STAY and play the new video game you just bought. Do you GO country dancing or STAY and play the game?",
-    "choices": {
-        "week14": "Go country dancing",
-        "week14": "Play the new video game",
-    }
-},
+
+
 
 "week8-2a": {
     "text": "You feel relieved to be done with your midterm exams and projects. A nearby relative invites you to a family dinner on Sunday, they seem excited that you're in Idaho! Do you GO or STAY at home?",
@@ -200,17 +118,17 @@
     }
 },
 "week13-2a": {
-    "text": "The end of the semester is quickly approaching, and you have a little bit of time before finals. Your roommates want to go country dancing and invite you to tag along. You could go with them, or you could STAY and play the new video game you just bought. Do you GO country dancing or STAY and play the game?",
+    "text": "It's week 13 of the semester. After a long day of classes, your roommate invites you to a late-night food truck festival off campus. You’re tempted—it’s a chance to relax, try new foods, and just vibe. But earlier this week, you promised your friend you'd go to their open mic night at the campus café. They've been anxious about performing. Now both events are happening at the same time, and you have to choose. Will you go to the FOOD TRUCK festival or the OPEN MIC night?",
     "choices": {
-        "week14": "Go country dancing",
-        "week14": "Play the new video game",
+        "week14": "Go to the food truck festival",
+        "week14": "Go to the open mic night",
     }
 },
 "week13-2b": {
-    "text": "The end of the semester is quickly approaching, and you have a little bit of time before finals. Your roommates want to go country dancing and invite you to tag along. You could go with them, or you could STAY and play the new video game you just bought. Do you GO country dancing or STAY and play the game?",
+    "text": "It's week 13 of the semester. After a long day of classes, your roommate invites you to a late-night food truck festival off campus. You’re tempted—it’s a chance to relax, try new foods, and just vibe. But earlier this week, you promised your friend you'd go to their open mic night at the campus café. They've been anxious about performing. Now both events are happening at the same time, and you have to choose. Will you go to the FOOD TRUCK festival or the OPEN MIC night?",
     "choices": {
-        "week14": "Go country dancing",
-        "week14": "Play the new video game",
+        "week14": "Go to the food truck festival",
+        "week14": "Go to the open mic night",
     }
 },
 
@@ -511,6 +429,7 @@
         "week23": "Go to volunteer fair",
     }
 },
+
 
 "week17-3a": {
     "text": "You had a restful and calm break! Now you're back in school and ready for the winter semester. You find out your new roommates are chill like that, kawabunga baby. They wanna hangout and go sledding but you need to get groceries. Do you choose to go HANGOUT with them or do you go out and get GROCERIES?",
@@ -881,7 +800,7 @@
         "week29-1a": "Skip devotional",
         "week29-1b": "Go to devotional",
     }
-}
+},
 "week28-1b": {
     "text": "These last weeks have been rough. College is no joke. You’re feeling swamped with all your homework and studies. So much so you need all the time you can get to get them done. Including that one hour of devotional time… Do you SKIP devo and work on homework or do you GO and enjoy that spiritual feast?",
     "choices": {

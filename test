@@ -60,7 +60,7 @@
             and decide you're going to get a membership and start going as often as you can.""")
             break # Will end loop
         else:
-            print("Invalid input. Please choose GO or STAY.") # Will loop back to input choice
+            print("Invalid input. Please choose VOLLEYBALL or CLIMB.") # Will loop back to input choice
         
     # Week 10
     
@@ -78,7 +78,7 @@
             a nap all afternoon. You wake up super tired and a little sad that you didn't join your family.""")      
             break # Will end loop
         else:
-            print("Invalid input. Please choose GO or STAY.") # Will loop back to input choice
+            print("Invalid input. Please choose JOIN or NOT.") # Will loop back to input choice
 
     # Week 11
     
@@ -87,7 +87,7 @@
         You look around a little bit without being too obvious. You haven't been on a date in college yet, but you're nervous about going on a blind date. Do you TEXT
         the number or NOT?""")
     while True:
-        choice = input("TEXT or NOT")strip().lower()
+        choice = input("TEXT or NOT").strip().lower()
         if choice == "text":
             print(f"""You text the number later that night and get a response almost immediately. You get their name, and set a date time for Friday at 6pm. Thursday
             comes around and you meet up with them. You feel a little awkward. You guys go play mini-golf at Fat Cats. Afterwards you guys go get froyo from Kiwi Loco.
@@ -99,7 +99,7 @@
             pass and you eventually kinda forget about the note altogether.""") 
             break
         else:
-            print("Invalid input. Please choose GO or STAY.") # Will loop back to input choice
+            print("Invalid input. Please choose TEXT or NOT.") # Will loop back to input choice
 
 
          # Week 12
@@ -112,19 +112,36 @@
         choice = input("EXPLORE or NOT").strip().lower()
         if choice == "explore":
             print(f"""You tell them 'why not? Lets go check it out! If anything seems off, we'll leave, deal?' You guys turn around and pull off to get as close to the 
-            building as possible. You feel an eerie feeling as you guys approach the building. KEEP GOING or STOP?""")
-        while True:
-            choice = input("KEEP GOING or STOP").strip().lower()
-            if choice == "keep going":
-                print(f"""You guys walk into the building without expressing your concerns. You walk into a large main room with cement walls Its dark inside with only 
-                      the doorway lighting the building. You see lots of rubble around the area. You see rafters up towards the ceiling. You walk in a litte farther. You
-                      guys come accross a staircase doing down, but you cannot see anything. You keep looking over your shoulder. You start to feel really bad about this
-                      and get the feeling you guys should leave.""")
-                while True:
-                    choice = input("GO DOWN or LEAVE").strip().lower()
-                    if choice == "go down":
-                        print(f"""You ignore your feelings and tell your friends you want to go downstairs. You turn your phone flashlight on and slowly start to make your
-                              way downstairs. One of your friend says they have a bad feeling and want to leave. You tell them its fine, and """)
+            building as possible. You feel an eerie feeling as you guys approach the building. You walk into the building and the deeper you go the darker it gets.
+            You guys keep trying to scare eachother a little bit, but you're just excited to be on an adventure. You didn't really grow up doing stuff like this. You guys
+            finish exploring and walk out. You get that jumpy feeling of trying to get away from the building as quick as possible.""")
+            break 
+        elif choice == "not":
+            print(f"""You get a bad feeling about exploring the building and tell your friends that maybe its no the best idea. They agree and you guys decide to 
+            keep driving.""")
+            break
+        else:
+            print("Invalid input. Please choose EXPLORE or NOT.") # Will loop back to input choice
 
-        elif choice == "":
-            print("")hlight you can't see the end of it. Tou stYou start to hear some scruffling.
+# week 13
+
+ print(F"""It's week 13 of the semester. After a long day of classes, your roommate invites you to a late-night food truck festival off campus. 
+You’re tempted—it’s a chance to relax, try new foods, and just vibe. 
+But earlier this week, you promised your friend you'd go to their open mic night at the campus café. They've been anxious about performing.
+Now both events are happening at the same time, and you have to choose.
+Will you go to the FOOD TRUCK festival or the OPEN MIC night?""")
+
+while True:
+    choice = input("FOOD or OPEN MIC: ").strip().lower()
+    if choice == "food":
+        print(f"""You grab your jacket and head out with your roommate. The night is full of good smells, neon lights, and way too many fried snacks.
+You’re laughing, trying new dishes, and for the first time in a while, not thinking about school. 
+Then your phone buzzes—a message from your friend: 'Hey... I thought you were coming tonight.' Oof. It stings a little, but the tacos were fire.""")
+        break
+    elif choice == "open mic":
+        print(f"""You tell your roommate to save you some leftovers and head to the café. Your friend’s eyes light up when they see you walk in. 
+They’re nervous, but you cheer them on through the whole performance. Afterwards, they tell you they would’ve bailed if you hadn’t shown up.
+You feel like you made the right call. The moment feels bigger than a snack run ever could have.""")
+        break
+    else:
+        print("Invalid input. Please choose FOOD or OPEN MIC.")  # Will loop back to input
